@@ -101,7 +101,8 @@ ENV TEST_DOCKER_ENV_NEQ1 "Dockerfile ENV assignment as foo bar, no  use of =, bo
 
 
 #ENTRYPOINT [ "/bin/bash" ]
-ENTRYPOINT [ "/bin/python3" ]
+#ENTRYPOINT [ "/bin/python3" ]
+ENTRYPOINT [ "/opt/conda/bin/python3" ]  # anaconda's path
 # $@ should be passed by docker run as arg when ENTRYPOINT is invoked
 # ref https://stackoverflow.com/questions/32727594/how-to-pass-arguments-to-shell-script-through-docker-run
 

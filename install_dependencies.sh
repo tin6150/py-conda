@@ -11,7 +11,9 @@ cd /opt/gitrepo/container
 conda list > tee conda_list.before.TXT 2>&1
 
 date
-conda env update -n base --file environment.yml
+# conda env update -n base --file environment.yml take 6 hours then "Error: The operation was canceled"
+#conda env update -n base --file environment.yml
+conda install --yes --file requirements.txt
 echo $?
 date
 

@@ -1,3 +1,5 @@
+# list extracted from LBL PILATES environment.yml https://github.com/tin6150/PILATES/blob/master/environment.yml
+
 name: pilates
 channels:
   - conda-forge

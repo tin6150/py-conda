@@ -13,6 +13,10 @@ conda list > tee conda_list.before.TXT 2>&1
 date
 # conda env update -n base --file environment.yml take 6 hours then "Error: The operation was canceled"
 #conda env update -n base --file environment.yml
+conda config --add channels defaults
+conda config --add channels conda-forge
+# conda config --add channels bioconda   # not used by Pilates
+
 conda install --yes --file requirements.txt
 echo $?
 date
